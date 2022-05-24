@@ -13,7 +13,7 @@ namespace TheEscape.Script
         {
             SetImageVisible();
         }
-
+        
         public void disconnectInteraction()
         {
             SetImageInvincible();
