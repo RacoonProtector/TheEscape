@@ -20,6 +20,7 @@ public class SelectionManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             print("Hey hey");
+
             SearchForInteractable();
         }
         
@@ -28,9 +29,7 @@ public class SelectionManager : MonoBehaviour
             SearchForInteractableAndDeactivate();
         }
     }
-
     
-
     private void SearchForInteractable()
     {
         var nearestGameObject = GetNearestGameObject();
@@ -47,7 +46,7 @@ public class SelectionManager : MonoBehaviour
 
         interactable.Interact();
         
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
     
     private void SearchForInteractableAndDeactivate()
@@ -66,7 +65,7 @@ public class SelectionManager : MonoBehaviour
 
         interactable.disconnectInteraction();
         
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
     }
 
     private GameObject GetNearestGameObject()
@@ -80,4 +79,6 @@ public class SelectionManager : MonoBehaviour
         }
         return result;
     }
+    
+    
 }

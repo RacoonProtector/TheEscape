@@ -9,6 +9,8 @@ namespace TheEscape.Script
 
         [SerializeField] private Image randomImage;
         [SerializeField] private Text quitReading;
+
+        private GameObject cockpit;
         public void Interact()
         {
             SetImageVisible();
@@ -17,6 +19,8 @@ namespace TheEscape.Script
         public void disconnectInteraction()
         {
             SetImageInvincible();
+
+            
         }
 
         private void SetImageInvincible()
